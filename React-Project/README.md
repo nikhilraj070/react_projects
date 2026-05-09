@@ -8,7 +8,7 @@ A collection of React projects built using React, Vite, Tailwind CSS, JavaScript
 
 | No. | Project | Status |Links |
 |-----|----------|--------|-----|
-| 1 | Counter App | ✅ | react-projects-hjr61fl6s-nikhilraj070s-projects.vercel.app|
+| 1 | Counter App | ✅ | [Visit](https://react-projects-hjr61fl6s-nikhilraj070s-projects.vercel.app/) |
 
 ---
 
