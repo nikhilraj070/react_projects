@@ -8,12 +8,8 @@ A collection of React projects built using React, Vite, Tailwind CSS, JavaScript
 
 | No. | Project | Status |Links |
 |-----|----------|--------|-----|
-<<<<<<< HEAD
-| 1 | Counter App | ✅ | [Visit](https://react-projects-hjr61fl6s-nikhilraj070s-projects.vercel.app/counter) |
-| 2 | Light/Dark Mode | ✅ | [Visit](https://react-projects-hjr61fl6s-nikhilraj070s-projects.vercel.app/dark-light-mode) |
-=======
-| 1 | Counter App | ✅ | [Visit](https://react-projects-hjr61fl6s-nikhilraj070s-projects.vercel.app/) |
->>>>>>> 199fc97ea25a1ffd383e25c63f3649ffa801194e
+| 1 | Counter App | ✅ | [Visit](https://react-projects-chi-seven.vercel.app/counter) |
+| 2 | Light/Dark Mode | ✅ | [Visit](https://react-projects-chi-seven.vercel.app/dark-light-mode) |
 
 ---
 
