@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+.project-card{
+  @apply
+  w-72
+  p-5
+  rounded-2xl
+  bg-[#161b22]
+  border
+  border-[#30363d]
+  text-white
+  text-xl
+  font-semibold
+  text-center
+  transition-all
+  duration-300
+  hover:scale-105
+  hover:border-blue-500
+  shadow-lg;
+}
