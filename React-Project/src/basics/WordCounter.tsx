@@ -32,10 +32,10 @@ function WordCounter() {
       <div className="bg-[#090C11] w-[95%]">
 
         {/* Header */}
-        <div className="h-20 bg-[#0D131B] flex gap-4 items-center px-5 rounded-xl">
+        <div className="h-fit p-3 bg-[#0D131B] flex gap-4 items-center px-5 rounded-xl">
 
           <div className="border-2 border-blue-900 rounded-xl p-2 bg-blue-900">
-            <IoTextSharp className="w-10 h-10 text-white" />
+            <IoTextSharp className="sm:w-10 w-5 h-5 sm:h-10 text-white" />
           </div>
 
           <div className="text-white text-2xl font-semibold">
