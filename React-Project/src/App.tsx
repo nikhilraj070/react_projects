@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CounterApp from "./basics/CounterApp";
 import Home from "./Home";
 import DarkLightMode from "./basics/DarkLightMode";
-import ToDoList from "./basics/ToDoList";
+// import ToDoList from "./basics/ToDoList";
 import WordCounter from "./basics/WordCounter";
 
  function App() {
