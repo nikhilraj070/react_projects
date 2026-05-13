@@ -10,9 +10,19 @@ function WordCounter() {
    const [charNoSpcae,setCharNoSpcae] = useState<number>(0)
    const [sentense,setSentense] = useState<number>(0)
    const [readingTime,setReadingTime] = useState<number>(0)
-   const copyText = ()=>{
-    navigator.clipboard.writeText(text)
-   }
+const copyText = async () => {
+
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+};
    useEffect(()=>{
        setTotalChar(text.length)
         if (text.trim() === "") {
