@@ -12,6 +12,7 @@ function Home() {
                <Link to={"/dark-light-mode"}className="project-card">Light/Dark Mode</Link>
                {/* <Link to={"/to-do-list"}className="project-card">To Do List</Link> */}
                <Link to={"/Word-counter"}className="project-card">Word Counter</Link>
+               <Link to={"/clock"}className="project-card">Live Clock</Link>
             </div>
         </div>
             

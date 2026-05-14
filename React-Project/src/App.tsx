@@ -4,6 +4,7 @@ import Home from "./Home";
 import DarkLightMode from "./basics/DarkLightMode";
 // import ToDoList from "./basics/ToDoList";
 import WordCounter from "./basics/WordCounter";
+import LiveClock from "./basics/LiveClock";
 
  function App() {
   return (
@@ -14,6 +15,7 @@ import WordCounter from "./basics/WordCounter";
          <Route path="/dark-light-mode" element={<DarkLightMode />} />
          {/* <Route path="/to-do-list" element={<ToDoList />} /> */}
          <Route path="/Word-counter" element={<WordCounter />} />
+         <Route path="/clock" element={<LiveClock />} />
          
 
        </Routes>
