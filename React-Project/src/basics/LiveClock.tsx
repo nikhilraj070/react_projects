@@ -255,7 +255,7 @@ const timezones = [
       )}
 
 
-      <div className="w-[95%] bg-[#060B17] border my-4  border-[#1E293B] h-fit p-3 sm:p-4 rounded-3xl shadow-[0_0_40px_rgba(59,130,246,0.12)]">
+      <div className="sm:w-[95%] w-full bg-[#060B17] border mb-4  border-[#1E293B] h-fit p-3 sm:p-4 rounded-3xl shadow-[0_0_40px_rgba(59,130,246,0.12)]">
  
         {/* Header */}
         <div className="w-full lg:pl-[15%] p-4  sm:p-5 flex items-center gap-4">
@@ -325,7 +325,7 @@ const timezones = [
 
                 {/* Hour Hand */}
                 <div
-                  className=" absolute -1.25 h-12  rounded-t-full rounded-b-3xl bg-linear-to-t from-white to-zinc-400 bottom-1/2 left-1/2 origin-bottom -translate-x-1/2 shadow-[0_0_10px_rgba(255,255,255,0.4)] "
+                  className=" absolute w-1.25 h-12  rounded-t-full rounded-b-3xl bg-linear-to-t from-white to-zinc-400 bottom-1/2 left-1/2 origin-bottom -translate-x-1/2 shadow-[0_0_10px_rgba(255,255,255,0.4)] "
                   style={{
                     transform: `translateX(-50%) rotate(${hourDeg}deg)`,
                   }}
