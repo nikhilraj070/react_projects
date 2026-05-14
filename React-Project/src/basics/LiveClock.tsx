@@ -402,7 +402,8 @@ const timezones = [
               {
                 timezones.map((t): React.ReactNode => (
                   <option key={t.id} value={t.zone}>
-                    {t.name} ({t.short})
+                    {t.name}
+
                   </option>
                 ))
               }
