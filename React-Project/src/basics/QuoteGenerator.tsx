@@ -12,7 +12,12 @@ type Quote = {
 }
  
 function QuoteGenerator() {
-    const [quote,setQuote]= useState<Quote | null>(null);
+    const defaultQuote:Quote = {
+   quote: "Success is the sum of small efforts repeated daily.",
+   author: "Robert Collier",
+   category: "success"
+}
+    const [quote,setQuote]= useState<Quote | null>(defaultQuote);
     const [load,setLoad] = useState<boolean>(false)
     const [favorite,setFavorite] = useState<Quote[]>([])
 
@@ -88,6 +93,7 @@ const setFav = () => {
 
     } catch (error) {
         console.log(error)
+
         
     }finally {
 
@@ -103,11 +109,6 @@ const removeFavorite = (text:string)=>{
 
    setFavorite(updatedFav);
 }
-useEffect(()=>{
-
-   randomQuote();
-
-},[])
 
 
   return (
@@ -122,8 +123,11 @@ useEffect(()=>{
                     <div className=' border border-[#1e293b] rounded-xl bg-[#0B1120] py-5 md:py-15   flex justify-center items-center flex-col p-2 gap-2 md:gap-5'>
                         <div className='min-h-70 py-2  lg:min-h-100 lg:w-[80%] m-2  rounded-xl w-full border flex flex-col justify-center items-center  border-blue-600 gap-5'>
                                <div><FaQuoteLeft className='text-[#6454FD] w-15 h-15 '  /></div>
-                               <div className='text-white text-2xl md:text-3xl text-center px-4 md:px-10 flex font-bold'>" {quote?.quote || "Click On the Next Quote"} "</div>
-                               <div className='text-zinc-400 text-xl md:text-2xl font-semibold'><i>~{quote?.author || "_Author"}</i></div>
+                               <div className='text-white text-2xl md:text-3xl text-center px-4 md:px-10 flex font-bold'>{load
+ ? "Loading..."
+ : `"${quote?.quote  || defaultQuote.quote}"`
+}</div>
+                               <div className='text-zinc-400 text-xl md:text-2xl font-semibold'><i>~{load?"Loading...":(quote?.author || defaultQuote.author)}</i></div>
                         </div>
                         <div className='flex text-white gap-2 justify-evenly items-center w-full lg:w-[80%]'> 
                             <div className='w-full lg:w-1/2 flex gap-2 md:flex-row flex-col'>
