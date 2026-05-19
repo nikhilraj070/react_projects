@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { FaRegCopy } from 'react-icons/fa'
 import { FaQuoteLeft } from 'react-icons/fa6'
 import { IoMdRefresh, IoMdShareAlt } from 'react-icons/io'
