@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react'
-import { FaQuoteRight, FaRegCopy } from 'react-icons/fa'
+import { FaRegCopy } from 'react-icons/fa'
 import { FaQuoteLeft } from 'react-icons/fa6'
 import { IoMdRefresh, IoMdShareAlt } from 'react-icons/io'
 import { MdOutlineFavorite, MdOutlineFavoriteBorder } from 'react-icons/md'
@@ -26,6 +26,7 @@ function QuoteGenerator() {
         textArea.select();
         document.execCommand("copy")
         document.body.removeChild(textArea)
+        console.log(error)
 
     }
   } 
