@@ -116,7 +116,8 @@ const timezones = [
   { id: 97, name: "Guatemala", zone: "America/Guatemala" },
   { id: 98, name: "Honduras", zone: "America/Tegucigalpa" },
   { id: 99, name: "El Salvador", zone: "America/El_Salvador" },
-  { id: 100, name: "Dominican Republic", zone: "America/Santo_Domingo" }
+  { id: 100, name: "Dominican Republic", zone: "America/Santo_Domingo" },
+{ id: 101, name: "Belgium", zone: "Europe/Brussels" }
 ];
 
   useEffect(() => {
