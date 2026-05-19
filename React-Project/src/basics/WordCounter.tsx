@@ -24,6 +24,7 @@ function WordCounter() {
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
+      
     }
   };
   useEffect(() => {

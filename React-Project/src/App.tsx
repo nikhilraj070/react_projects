@@ -5,6 +5,7 @@ import DarkLightMode from "./basics/DarkLightMode";
 // import ToDoList from "./basics/ToDoList";
 import WordCounter from "./basics/WordCounter";
 import LiveClock from "./basics/LiveClock";
+import QuoteGenerator from "./basics/QuoteGenerator";
 
  function App() {
   return (
@@ -16,6 +17,7 @@ import LiveClock from "./basics/LiveClock";
          {/* <Route path="/to-do-list" element={<ToDoList />} /> */}
          <Route path="/Word-counter" element={<WordCounter />} />
          <Route path="/clock" element={<LiveClock />} />
+         <Route path="/quote" element={<QuoteGenerator />} />
          
 
        </Routes>
